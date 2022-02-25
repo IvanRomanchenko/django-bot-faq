@@ -5,14 +5,19 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
 	name="django-bot-faq",
-	version="0.1.2",
+	version="0.1.4",
 	author="Ivan Romanchenko",
 	author_email="vanvanych789@gmail.com",
 	description="FAQ module",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 	url="https://github.com/IvanRomanchenko/django-bot-faq",
-	packages=["bot_faq", ],
+	packages=[
+		"bot_faq",
+		"bot_faq.admin",
+		"bot_faq.db_elastic",
+		"bot_faq.tbot"
+	],
 	include_package_data=True,
 	classifiers=[
 		"Programming Language :: Python :: 3.10",
