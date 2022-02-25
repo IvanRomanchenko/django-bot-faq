@@ -2,4 +2,4 @@ venv/
 .idea/
 build/
 dist/
-django_bot_faq.egg-info
+/*.egg-info

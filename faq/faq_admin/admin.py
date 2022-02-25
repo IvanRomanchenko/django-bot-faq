@@ -4,7 +4,7 @@ from django.contrib.admin.widgets import AdminFileWidget
 from django.utils.safestring import mark_safe
 
 from .models import FAQArticle, FAQArticleContent
-from bot_faq.db_elastic.engine import es
+from faq.db_elastic.engine import es
 
 
 class AdminImageWidget(AdminFileWidget):

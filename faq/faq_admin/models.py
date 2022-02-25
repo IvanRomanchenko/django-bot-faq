@@ -2,7 +2,7 @@ from django.db import models
 
 from mptt.models import MPTTModel, TreeForeignKey
 
-from bot_faq.db_elastic.engine import es
+from faq.db_elastic.engine import es
 from .validators import (
     tags_in_text_validate,
     image_size_validate,

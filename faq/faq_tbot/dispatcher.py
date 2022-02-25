@@ -6,7 +6,7 @@ from telebot import types as tp
 
 from .keyboards import FAQKeyboards
 from .translations import messages as ms
-from bot_faq.admin import orm_utils as orm
+from faq.faq_admin import orm_utils as orm
 from bot_storage.storage import BaseStorage
 
 

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
 	name="django-bot-faq",
-	version="0.1.4",
+	version="0.2.1",
 	author="Ivan Romanchenko",
 	author_email="vanvanych789@gmail.com",
 	description="FAQ module",
@@ -13,10 +13,11 @@ setuptools.setup(
 	long_description_content_type="text/markdown",
 	url="https://github.com/IvanRomanchenko/django-bot-faq",
 	packages=[
-		"bot_faq",
-		"bot_faq.admin",
-		"bot_faq.db_elastic",
-		"bot_faq.tbot"
+		"faq",
+		"faq.faq_admin",
+		"faq.faq_admin.migrations",
+		"faq.db_elastic",
+		"faq.faq_tbot"
 	],
 	include_package_data=True,
 	classifiers=[
@@ -30,7 +31,9 @@ setuptools.setup(
 		"Django==4.0.2",
 		"django-mptt==0.13.4",
 		"django-cleanup==6.0.0",
+		"Pillow==9.0.1",
 		"pyTelegramBotAPI==4.4.0",
+		"psycopg2==2.9.3",
 		"bot-storage==1.0.1",
 		"loguru==0.6.0",
 		"elasticsearch==7.17.0",

@@ -32,7 +32,7 @@ BOT_STORAGE = storage
 INSTALLED_APPS = [
     'mptt',
     'django_cleanup',
-    'bot_faq.admin',
+    'faq.faq_admin',
     'django.contrib.postgres',
     ...
 ]
@@ -51,7 +51,7 @@ More information about installing and running ElasticSearch on your system on [t
 
 ## Create and apply migrations
 ```sh
-python manage.py makemigrations
+python manage.py makemigrations faq_admin tbot_base
 python manage.py migrate
 ```
 
@@ -63,8 +63,8 @@ python manage.py migrate
 from telebot import types
 from telebot.apihelper import ApiTelegramException
 
-from tbot_base.bot import tbot  # install tbot-base lib or make your own tbot instance
-from bot_faq.tbot.dispatcher import FAQDispatcher
+from tbot_base.bot import tbot  # install faq_tbot-base lib or make your own faq_tbot instance
+from faq.faq_tbot.dispatcher import FAQDispatcher
 
 from .storage import storage as st  # your storage for users data
 

@@ -2,7 +2,7 @@ from django.contrib.postgres.search import TrigramSimilarity
 
 from typing import Optional, Union
 
-from bot_faq.db_elastic.engine import es
+from faq.db_elastic.engine import es
 from .models import FAQArticle, FAQArticleContent
 
 
